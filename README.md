@@ -45,6 +45,20 @@ var draw = module.exports = function(data, width, height, fn) {
 };
 ```
 
+_Please note!_ A shim for three.js is needed to render to canvas with
+drone-video. Add these lines to the top of three.js:
+
+```js
+var document = document || {};
+document.createElement = function(type) { if (type === 'canvas') return new (require('canvas')); };
+```
+
+## install / using
+
+Install with `npm install`.
+
+Test on the browser with `npm test`.
+
 ## license
 Copyright (c) 2013 Kyle Robinson Young
 

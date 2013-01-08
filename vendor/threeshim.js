@@ -1,12 +1,7 @@
 // shim for creating canvas elements in node
-// with three.js. Pop this on top.
-var document = document || {};
-if (!process.browser) {
-  document.createElement = function(type) {
-    if (type === 'canvas') {
-      var c = new (require('canvas'));
-      c.style = {width:0,height:0};
-      return c;
-    }
-  };
-}
+// with three.js. Pop this on top when you
+// want to run on the server.
+// TODO: Figure out a way to do this automatically
+
+//var document = document || {};
+//document.createElement = function(type) { if (type === 'canvas') return new (require('canvas')); };
