@@ -5,6 +5,7 @@ _work in progress_
 HUD for [drone-video](https://github.com/TooTallNate/node-drone-video).
 
 **Goals**
+
 1. ~~battery meter in a corner~~
 1. ~~integrate with three.js~~
 1. ~~cartesian coordinates with rotation values~~
@@ -18,9 +19,11 @@ HUD for [drone-video](https://github.com/TooTallNate/node-drone-video).
 ## demo
 
 Video demonstrating three.js coordinates and placeholder for the ar drone model:
+
 <iframe width="560" height="315" src="http://www.youtube.com/embed/TtwjykeRAsE?list=UUpqYfSWEcyBGorRGvPsHkgg" frameborder="0" allowfullscreen></iframe>
 
 and the battery level:
+
 ![battery level](http://i.imgur.com/4stMG.jpg)
 
 ## example
