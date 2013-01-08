@@ -18,9 +18,7 @@ HUD for [drone-video](https://github.com/TooTallNate/node-drone-video).
 
 ## demo
 
-Video demonstrating three.js coordinates and placeholder for the ar drone model:
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/TtwjykeRAsE?list=UUpqYfSWEcyBGorRGvPsHkgg" frameborder="0" allowfullscreen></iframe>
+[Here is a youtube video](http://www.youtube.com/watch?v=TtwjykeRAsE&list=UUpqYfSWEcyBGorRGvPsHkgg&index=1) demonstrating three.js coordinates and placeholder for the ar drone model.
 
 and the battery level:
 
