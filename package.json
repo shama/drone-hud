@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "drone-hud",
+  "description": "HUD for an AR Drone",
+  "version": "0.1.0",
+  "homepage": "https://github.com/shama/drone-hud",
+  "author": {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com",
+    "url": "http://dontkry.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/drone-hud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shama/drone-hud/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shama/drone-hud/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/hud",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "browserify test/test.js -o test/test.browser.js -i canvas && open test/index.html",
+    "shim": "cat vendor/threeshim.js node_modules/three/three.js > vendor/three.shimd.js"
+  },
+  "devDependencies": {
+    "browserify": "*",
+    "canvas": "~0.13.1",
+    "three": "~0.54.11-dev"
+  },
+  "dependencies": {},
+  "keywords": []
+}
