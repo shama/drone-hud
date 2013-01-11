@@ -36,5 +36,7 @@
     "three": "~0.54.11-dev"
   },
   "dependencies": {},
-  "keywords": []
+  "keywords": [
+    "nodecopter"
+  ]
 }

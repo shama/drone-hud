@@ -10,9 +10,9 @@ HUD for [drone-video](https://github.com/TooTallNate/node-drone-video).
 1. ~~integrate with three.js~~
 1. ~~cartesian coordinates with rotation values~~
 1. mirroring ar drone model (building a model)
-1. altitude bar shrink/grow below
+1. ~~altitude bar shrink/grow below~~
 1. ticks that slide along coordinates (or something) to show velocity
-1. display name of drone/wifi net
+1. ~~display name of drone/wifi net~~
 1. cell shade everything to look cool
 1. nodecopter logo ftw
 
@@ -31,14 +31,27 @@ Load the following into [drone-video](https://github.com/TooTallNate/node-drone-
 var Canvas = require('canvas');
 var HUD = require('drone-hud');
 
-var draw = module.exports = function(data, width, height, fn) {
-  var canvas = new Canvas(width, height);
-  var ctx = canvas.getContext('2d');
+var canvas = new Canvas(width, height);
+var h = new HUD(canvas);
 
-  var h = new HUD(canvas);
-  h.drone(data.demo);
-  h.cartesian(data.demo);
+var draw = module.exports = function(data, width, height, fn) {
+
+  // name of drone in top right
+  h.name('NODECOPTER');
+
+  // battery level in top left
   h.battery(data.demo.batteryPercentage);
+
+  // drone model (WIP)
+  h.drone(data.demo);
+
+  // 3d cartesian coordinates
+  h.cartesian(data.demo);
+
+  // altitude in meters
+  h.altitude(data.altitudeMeters);
+
+  // render the scene
   h.render();
 
   canvas.toBuffer(fn);
@@ -60,6 +73,5 @@ Install with `npm install`.
 Test on the browser with `npm test`.
 
 ## license
-Copyright (c) 2013 Kyle Robinson Young
-
+Copyright (c) 2013 Kyle Robinson Young<br/>
 Licensed under the MIT license.
