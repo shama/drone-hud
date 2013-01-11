@@ -27,7 +27,7 @@ setInterval(function() {
   // simulate up/down altitude since test data dont have it
   // between 0 and 30m
   data.altitudeMeters = Math.abs(Math.floor((Math.sin((Math.PI * 2) * i) - 1) * 15));
-  h.altitude(data.altitudeMeters);
+  h.altimeter(data.altitudeMeters);
 
   h.render();
   i += 0.01;

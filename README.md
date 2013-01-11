@@ -13,7 +13,7 @@ HUD for [drone-video](https://github.com/TooTallNate/node-drone-video).
 1. ~~altitude bar shrink/grow below~~
 1. ticks that slide along coordinates (or something) to show velocity
 1. ~~display name of drone/wifi net~~
-1. cell shade everything to look cool
+1. ~~cel shade everything to look cool~~
 1. nodecopter logo ftw
 
 ## demo
@@ -49,7 +49,7 @@ var draw = module.exports = function(data, width, height, fn) {
   h.cartesian(data.demo);
 
   // altitude in meters
-  h.altitude(data.altitudeMeters);
+  h.altimeter(data.altitudeMeters);
 
   // render the scene
   h.render();
