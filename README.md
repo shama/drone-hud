@@ -20,9 +20,9 @@ HUD for [drone-video](https://github.com/TooTallNate/node-drone-video).
 
 [Here is a youtube video](http://www.youtube.com/watch?v=TtwjykeRAsE&list=UUpqYfSWEcyBGorRGvPsHkgg&index=1) demonstrating three.js coordinates and placeholder for the ar drone model.
 
-and the battery level:
+and a screenshot so far:
 
-![battery level](http://i.imgur.com/4stMG.jpg)
+![screenshot](https://raw.github.com/shama/drone-hud/master/test/fixtures/hud-screen.jpg)
 
 ## example
 Load the following into [drone-video](https://github.com/TooTallNate/node-drone-video)
